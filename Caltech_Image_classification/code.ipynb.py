@@ -21,21 +21,21 @@ img_height = 224
 img_width = 224
 
 train_ds = tf.keras.preprocessing.image_dataset_from_directory(
-  "/Group_16/train",
+  "/dataset/train",
   validation_split=0,
   image_size=(img_height, img_width),
   label_mode="int",
   batch_size=250)
 
 val_ds = tf.keras.preprocessing.image_dataset_from_directory(
-  "/Group_16/val",
+  "/dataset/val",
   validation_split=0,
   image_size=(img_height, img_width),
   label_mode="int",
   batch_size=50)
 
 test_ds = tf.keras.preprocessing.image_dataset_from_directory(
-  "/Group_16/test",
+  "/dataset/test",
   image_size=(img_height, img_width),
   label_mode="int",
   batch_size=100)
